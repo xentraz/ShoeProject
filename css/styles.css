@@ -144,8 +144,10 @@ body {
 }
 
 .Logo {
-  transform: translateX(+80%);
-  margin-top: 5px;
+  transform: translateX(+90%);
+  margin-top: 2px;
+  width: 150px;
+  height: 60px;
 }
 
 main {
@@ -233,7 +235,6 @@ i {
   text-transform: uppercase;
   font-family: "Montserrat", Courier, monospace;
   border-radius: 20px;
-  transition: 0.5s;
   overflow: hidden;
 }
 
