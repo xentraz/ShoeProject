@@ -101,6 +101,7 @@ nav ul > li > a:hover::before {
 
   height: 30px;
   width: 30px;
+  bottom: 0;
   font-family: "Montserrat";
   font-weight: 100;
 
@@ -120,11 +121,15 @@ nav ul > li > a:hover::before {
   height: 30px;
   text-transform: uppercase;
   text-align: left;
+
+  font-family: "Montserrat";
+  font-weight: 100;
+  vertical-align: bottom;
 }
 
 .input-open {
   width: 150px;
-  padding: 0 20px;
+  padding: 0 5px;
 }
 
 /* Main */
@@ -204,6 +209,11 @@ main {
   text-align: center;
 
   box-shadow: rgba(0, 0, 0, 0.85) 5px 5px 25px -15px;
+}
+
+i {
+  vertical-align: middle;
+  align-self: center;
 }
 
 .buynow-button > span {
