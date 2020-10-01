@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,800;1,900&display=swap");
+
+header {
+  height: 68px;
+  background-color: #ffffff;
+}
+
+.navbar .logo {
+  background: transparent;
+  position: relative;
+  float: left;
+}
+
+/* Navigation bar */
+
+.navbar {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+}
+
+header ::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: right;
+  align-self: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0px 150px 0px 0px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+
+  font-family: "Montserrat";
+  font-weight: 100;
+  float: inherit;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 60px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-decoration-color: #000000;
+  position: relative;
+}
+
+nav ul > li > a {
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9375rem;
+}
+
+/* Navigation Hover */
+
+nav ul > li > a:hover {
+  color: #ff0073;
+}
+
+nav ul > li > a::before {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #ff0073;
+
+  position: absolute;
+  width: 0%;
+  bottom: 0;
+
+  transition: ease-in-out 150ms;
+}
+
+nav ul > li > a:hover::before {
+  width: 100%;
+}
+
+/* Search Icon */
+
+.search_icon {
+  height: 15px;
+  width: 15px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.trigger_search {
+  border: 1px #000000;
+  border-radius: 50%;
+  background-color: white;
+
+  height: 30px;
+  width: 30px;
+  font-family: "Montserrat";
+  font-weight: 100;
+
+  padding-top: 13px;
+
+  cursor: pointer;
+}
+
+.input {
+  border-radius: 0%;
+  border: none;
+  outline: none;
+  transition: 0.2s ease-in-out all;
+  width: 0;
+  margin-right: 0px;
+  padding-right: 0px;
+  height: 30px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.input-open {
+  width: 150px;
+  padding: 0 20px;
+}
+
+/* Main */
+
+body {
+  margin: 0px;
+  background: #ffffff;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 300;
+  height: 100%;
+  margin: 0px 20px 0px 20px;
+}
+
+.Logo {
+  transform: translateX(+80%);
+  margin-top: 5px;
+}
+
+main {
+  width: 100%;
+}
+
+/* Backgorund Image */
+
+.bubblesimg {
+  background-image: url(../img/Background.png);
+  padding: top 0px;
+  margin: top 0px;
+  padding-bottom: 520px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Text */
+
+.h1box > h1 {
+  display: block;
+  position: absolute;
+  float: left;
+  bottom: 440px;
+  transform: translateX(+65%);
+
+  font-family: "Montserrat";
+  font-weight: 100;
+  font-size: 2rem;
+
+  text-align: left;
+  color: #000;
+}
+
+.h1box > h1 > span {
+  font-weight: 600;
+}
+
+.h2box > h2 {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 100;
+  float: left;
+  padding-top: 200px;
+  transform: translateX(+55%);
+  position: absolute;
+}
+
+/* Button */
+
+.buynow-button {
+  display: block;
+  position: absolute;
+  float: left;
+
+  bottom: 280px;
+  transform: translateX(+100%);
+
+  position: absolute;
+  text-align: center;
+
+  box-shadow: rgba(0, 0, 0, 0.85) 5px 5px 25px -15px;
+}
+
+.buynow-button > span {
+  position: "absolute";
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: normal;
+}
+
+.buynow-button {
+  background: #ffffff;
+  color: #ff0073;
+  width: 180px;
+  height: 40px;
+  border: none;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-family: "Montserrat", Courier, monospace;
+  border-radius: 20px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.buynow-button:focus {
+  outline: none;
+}
+
+.buynow-button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #ffffff;
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.5s;
+  filter: blur(30px);
+  transform: translateX(-130px) skewX(-15deg);
+}
+
+.buynow-button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #ffffff;
+  width: 60px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0;
+  filter: blur(30px);
+  transform: translate(-100px) scaleX(-15deg);
+}
+
+.buynow-button:hover {
+  background: #ff0073;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.buynow-button:hover::before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+.buynow-button:hover::after {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 0.5s;
+}
