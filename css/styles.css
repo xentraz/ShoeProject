@@ -207,15 +207,16 @@ main {
 
 .buynow-button {
   display: block;
-  position: absolute;
   float: left;
-
-  bottom: 280px;
-  transform: translateX(+100%);
-
+  left: 100px;
+  top: 500px;
   position: absolute;
-  text-align: center;
 
+  font-family: "Montserrat";
+  font-weight: 100;
+  font-size: 1rem;
+
+  text-align: center;
   box-shadow: rgba(0, 0, 0, 0.85) 5px 5px 25px -15px;
 }
 
