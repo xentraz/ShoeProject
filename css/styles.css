@@ -7,18 +7,18 @@ header {
   position: absolute;
 }
 
+header ::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* Navigation bar */
 
 .navbar {
   width: 100%;
   margin: 0 auto;
   position: absolute;
-}
-
-header ::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 nav {
@@ -141,13 +141,13 @@ body {
 }
 
 .Logo {
-  transform: translateX(+90%);
+  transform: translateX(+50%);
   margin-top: 2px;
   width: 150px;
   height: 60px;
   background: transparent;
-  position: absolute;
   float: left;
+  position: relative;
 }
 
 main {
@@ -165,7 +165,7 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  margin-top: 70px;
+  margin-top: 69px;
   width: 100%;
 }
 
