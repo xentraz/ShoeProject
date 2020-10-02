@@ -1,14 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,800;1,900&display=swap");
 
 header {
-  height: 68px;
+  height: 70px;
+  width: 100%;
   background-color: #ffffff;
-}
-
-.navbar .logo {
-  background: transparent;
-  position: relative;
-  float: left;
+  position: absolute;
 }
 
 /* Navigation bar */
@@ -41,7 +37,7 @@ nav ul {
 
   font-family: "Montserrat";
   font-weight: 100;
-  float: inherit;
+  position: relative;
 }
 
 nav li {
@@ -141,6 +137,7 @@ body {
   font-weight: 300;
   height: 100%;
   margin: 0px 20px 0px 20px;
+  position: relative;
 }
 
 .Logo {
@@ -148,6 +145,9 @@ body {
   margin-top: 2px;
   width: 150px;
   height: 60px;
+  background: transparent;
+  position: absolute;
+  float: left;
 }
 
 main {
@@ -157,13 +157,16 @@ main {
 /* Backgorund Image */
 
 .bubblesimg {
-  background-image: url(../img/Background.png);
-  padding: top 0px;
-  margin: top 0px;
-  padding-bottom: 520px;
-  background-size: contain;
+  place-content: middle;
+  width: 100%;
+}
+
+.backgroundimg {
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+  margin-top: 70px;
+  width: 100%;
 }
 
 /* Text */
@@ -181,10 +184,12 @@ main {
 
   text-align: left;
   color: #000;
+  position: absolute;
 }
 
 .h1box > h1 > span {
   font-weight: 600;
+  position: absolute;
 }
 
 .h2box > h2 {
