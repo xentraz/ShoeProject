@@ -164,7 +164,7 @@ main {
 .backgroundimg {
   background-repeat: no-repeat;
   background-position: center;
-  position: relative;
+  position: absolute;
   margin-top: 70px;
   width: 100%;
 }
@@ -173,10 +173,10 @@ main {
 
 .h1box > h1 {
   display: block;
-  position: absolute;
   float: left;
-  bottom: 440px;
-  transform: translateX(+65%);
+  position: relative;
+  left: 100px;
+  top: 150px;
 
   font-family: "Montserrat";
   font-weight: 100;
@@ -184,7 +184,6 @@ main {
 
   text-align: left;
   color: #000;
-  position: absolute;
 }
 
 .h1box > h1 > span {
@@ -193,13 +192,15 @@ main {
 }
 
 .h2box > h2 {
-  font-family: "Montserrat";
-  font-size: 1rem;
-  font-weight: 100;
+  display: block;
   float: left;
-  padding-top: 200px;
-  transform: translateX(+55%);
+  left: 100px;
+  top: 300px;
   position: absolute;
+
+  font-family: "Montserrat";
+  font-weight: 100;
+  font-size: 1rem;
 }
 
 /* Button */
