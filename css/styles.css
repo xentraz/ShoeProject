@@ -131,13 +131,14 @@ nav ul > li > a:hover::before {
 /* Main */
 
 body {
-  margin: 0px;
+  margin: 0px auto;
   background: #ffffff;
   font-family: "Courier New", Courier, monospace;
   font-weight: 300;
   height: 100%;
   margin: 0px 20px 0px 20px;
   position: relative;
+  padding-bottom: 50px;
 }
 
 .Logo {
@@ -293,4 +294,7 @@ i {
   transform: translateX(300px) skewX(-15deg);
   opacity: 1;
   transition: 0.5s;
+}
+
+@media all and (max-width: 100%) {
 }
